@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Container for the section */
+.landingpage {
+  margin-top: 10%;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-out;
+}
+
+/* Visible state when element is in view */
+.landingpage.visible {
+  opacity: 1; /* Visible when in view */
+}
+
+/* Text and heading animations */
+.text-content p,
+.text-content h1,
+.work,
+.info-para {
+  opacity: 0;
+  transform: translateX(-100px); /* Default to left slide-in */
+  animation: fadeInFromLeft 1s forwards;
+}
+
+.text-content h1 {
+  animation-delay: 0.2s;
+}
+
+.work {
+  animation-delay: 0.4s;
+}
+
+/* Info paragraph specific animation */
+.info-para {
+  transform: translateX(100px); /* Slide in from the right */
+  animation: fadeInFromRight 1s 0.6s forwards;
+}
+
+/* Styles for specific text elements */
+.name {
+  font-size: 4rem;
+  font-weight: 700;
+  width: fit-content;
+  display: flex;
+  align-items: flex-start;
+  color: rgb(179, 147, 217);
+  flex-wrap: wrap;
+}
+
+.work {
+  font-size: 4rem;
+  font-weight: 700;
+  width: fit-content;
+  display: flex;
+  align-items: flex-start;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.p {
+    text-shadow: 0 0 7px rgba(255, 255, 255, 0.7), 0 0 3px rgba(255, 255, 255, 0.3);
+    font-size: 1.26rem;
+    text-transform: uppercase;
+    color: #e5e5e5;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: fadeInFromLeft 1s forwards;
+}
+
+.info-para {
+    text-shadow: 0 0 7px rgba(255, 255, 255, 0.7), 0 0 3px rgba(255, 255, 255, 0.3);
+    font-size: 1.26rem;
+    text-transform: uppercase;
+    color: #e5e5e5;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: fadeInFromLeft 1s forwards;
+}
+
+/* Keyframes for animations */
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Gradient animation for .p class */
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

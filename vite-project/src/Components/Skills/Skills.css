@@ -1,0 +1,84 @@
+:root {
+    --tech-stack-box-first-color: #1a1a29;
+    --tech-stack-box-second-color: rgba(27, 27, 40, 0);
+    --tech-stack-box-border-color: #292929;
+}
+
+.Skills {
+    margin-top: 10%;
+}
+
+.frontend-dev-section {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.tech-stack-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.tech-stack-box {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
+    border: 1px solid var(--tech-stack-box-border-color);
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.tech-stack-box img {
+    width: 80%;
+}
+
+.tech-stack-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tech-stack-box:hover .tooltip {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tooltip {
+    position: absolute;
+    top: -20px;
+    opacity: 0;
+    background: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
+    border: 1px solid var(--tech-stack-box-border-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    backdrop-filter: blur(5px);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 500px) {
+    .tech-stack-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .tech-stack-box {
+        width: 100%;
+        height: calc(76vw / 2);
+    }
+}
