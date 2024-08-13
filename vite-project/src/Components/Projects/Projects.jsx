@@ -4,7 +4,7 @@ import './Projects.css'; // Ensure this path is correct
 const Projects = () => {
   return (
     <>
-   
+  
     <section className="projects-section-container" id="projects">
       <div className="projects-section-div">
         <div className="project-boxes-div">
