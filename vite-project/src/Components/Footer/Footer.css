@@ -1,0 +1,45 @@
+.card{
+    background: rgba( 255, 255, 255, 0.05 );
+box-shadow: 0 8px 32px 0 rgba(23, 9, 56, 0.37);
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.getintouch-heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+ }
+ .getintouch-heading article{
+    font-size: 2rem;
+    background: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 100;
+    
+ }
+
+ p4 {
+    display: block; /* Makes sure each <p4> element appears on a new line */
+    margin-bottom: 10px; /* Adjust spacing between lines */
+    font-size: 1.25rem; /* Adjust font size if needed */
+  }
+  
+  p4 strong {
+    font-weight: light; /* Make the labels bold */
+  }
+  /* Footer.css */
+
+.black-footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+
+  }
+  

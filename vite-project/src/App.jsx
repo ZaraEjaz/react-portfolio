@@ -6,6 +6,7 @@ import Intro from './Components/Introduction/Intro';
 import Section1 from './Components/Section1/Section1';
 import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
+import Footer from './Components/Footer/Footer';
 const App = () => {
   return (
     <>
@@ -24,6 +25,7 @@ const App = () => {
     <div className='container'>
       <Projects/>
     </div>
+    <Footer/>
     </>
   )
 }
