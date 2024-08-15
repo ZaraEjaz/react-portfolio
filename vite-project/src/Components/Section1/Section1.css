@@ -38,7 +38,7 @@
 
 /* Styles for specific text elements */
 .name {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
   width: fit-content;
   display: flex;
@@ -57,19 +57,10 @@
   flex-wrap: wrap;
 }
 
-.p {
-    text-shadow: 0 0 7px rgba(255, 255, 255, 0.7), 0 0 3px rgba(255, 255, 255, 0.3);
-    font-size: 1.26rem;
-    text-transform: uppercase;
-    color: #e5e5e5;
-    opacity: 0;
-    transform: translateX(-100px);
-    animation: fadeInFromLeft 1s forwards;
-}
-
 .info-para {
     text-shadow: 0 0 7px rgba(255, 255, 255, 0.7), 0 0 3px rgba(255, 255, 255, 0.3);
     font-size: 1.26rem;
+    font-weight: lighter;
     text-transform: uppercase;
     color: #e5e5e5;
     opacity: 0;

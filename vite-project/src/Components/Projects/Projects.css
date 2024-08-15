@@ -70,12 +70,14 @@
     border-radius: 30px;
     border: 1px solid var(--tech-stack-box-border-color);
     overflow: hidden;
+    flex-wrap: wrap; /* Added to handle wrapping on smaller screens */
 }
 
 .info-div {
     width: 50%;
-    height: 100%;
+    height: auto;
     display: flex;
+    padding: 20px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -206,4 +208,21 @@
     margin-top: 20px;
     color: var(--color-gray);
     font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+    .project-box {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+    }
+
+    .info-div, .image-div {
+        width: 100%; /* Make both divs take full width */
+        padding: 20px;
+        text-align: center; /* Center align text */
+    }
+
+    .image-div img {
+        margin-top: 0; /* Remove margin for a more centered image */
+        border-radius: 0; /* Adjust border radius */
+    }
 }

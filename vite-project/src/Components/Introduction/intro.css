@@ -9,6 +9,8 @@ p {
   opacity: 0;
   transform: translateX(-100px);
   animation: fadeInFromLeft 1s forwards;
+  font-weight: lighter;
+  word-spacing: 5px;
 }
 
 h1 {

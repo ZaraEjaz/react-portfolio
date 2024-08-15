@@ -3,7 +3,7 @@ import './intro.css';
 import Custombtn from '../LetsTalkbtn/Custombtn';
 const Intro = () => {
   return (
-    <div className="container Introcontainer">
+    <div id='Intro'className="container Introcontainer">
       <div className="row align-items-center">
         <div className="col-lg-7 col-md-6 col-sm-12 intro-text">
           <p className="tracking-in-expand-fwd-bottom mb-5">About me .____________________</p>

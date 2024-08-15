@@ -25,10 +25,10 @@ const CustomNavbar = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mx-auto">
-          <Nav.Link href="#home" className="custom-nav-link mx-2">Home</Nav.Link>
-          <Nav.Link href="#about-me" className="custom-nav-link mx-2">About Me</Nav.Link>
-          <Nav.Link href="#skills" className="custom-nav-link mx-2">Skills</Nav.Link>
-          <Nav.Link href="#projects" className="custom-nav-link mx-2">Projects</Nav.Link>
+          <Nav.Link href="#Section1" className="custom-nav-link mx-5">Home</Nav.Link>
+          <Nav.Link href="#Intro" className="custom-nav-link mx-5">About Me</Nav.Link>
+          <Nav.Link href="#Skills" className="custom-nav-link mx-5">Skills</Nav.Link>
+          <Nav.Link href="#projects" className="custom-nav-link mx-5">Projects</Nav.Link>
         </Nav>
         <Nav>
           <label className="switch mx-2">
