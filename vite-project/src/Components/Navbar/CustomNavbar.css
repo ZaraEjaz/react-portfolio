@@ -49,16 +49,15 @@
   border-radius: 40px;
   margin: 2%;
   padding: 1.5%;
-  z-index: 1000;
+  z-index: 999;
   width: 100%;
   display: flex;
   justify-content: center; /* Center horizontally */
-  position: relative;
   transform: translateZ(0); /* 3D look */
   transition: all 0.3s ease-in-out; /* Smooth transition */
-  background: linear-gradient(135deg, hsl(267, 67%, 11%), hsl(230, 20%, 7%)); /* Gradient background */
-  border: 1px solid transparent; /* Border with default transparency */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Glowing effect */
+  background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
+  border: 1px solid var(--tech-stack-box-border-color);
+  overflow: hidden;
 }
 
 .custom-navbar:hover {
@@ -111,68 +110,8 @@ body.dark-mode .custom-navbar .navbar-brand {
   color: #f4f4f5; /* Light text color in dark mode */
 }
 
-/* Dark Mode Specific Styles */
-.bg-dark.custom-navbar {
-  background-color: #6b39a8!important; /* Dark mode color */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Glowing effect for dark mode */
-}
 
-/* Switch Styles */
-/* The switch - the box around the slider */
-.switch {
-  display: block;
-  --width-of-switch: 3.5em;
-  --height-of-switch: 2em;
-  --size-of-icon: 1.4em;
-  --slider-offset: 0.3em;
-  position: relative;
-  width: var(--width-of-switch);
-  height: var(--height-of-switch);
-}
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ededed;
-  transition: .4s;
-  border-radius: 30px;
-}
-.slider:before {
-  position: absolute;
-  content: "";
-  height: var(--size-of-icon, 1.4em);
-  width: var(--size-of-icon, 1.4em);
-  border-radius: 20px;
-  left: var(--slider-offset, 0.3em);
-  top: 50%;
-  transform: translateY(-50%);
-  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
-  transition: .4s;
-}
-input:checked + .slider {
-  background-color: #303136;
-}
-input:checked + .slider:before {
-  left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
-  background: #303136;
-  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
-}
 
-/* Dark Mode Styles */
-body.dark-mode {
-  background: linear-gradient(135deg, hsl(267, 67%, 11%), hsl(230, 20%, 7%)); /* Gradient background */
-  color: #f4f4f5;
-}
 
 /* Toggle Button Styles for Smaller Screens */
 @media (max-width: 768px) {

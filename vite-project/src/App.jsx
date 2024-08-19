@@ -16,10 +16,10 @@ const App = () => {
         <div className="layer"></div>
       </div>
       
-      <div className='container layer'>
+      <div className='container layer mb-5'>
         <CustomNavbar/>
       </div>
-      <div className='container layer'>
+      <div className='container layer mt-5'>
         <Section1/>
       </div>
       <div className='container Introduction layer'>
