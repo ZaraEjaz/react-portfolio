@@ -19,7 +19,7 @@ return (
                      Developed with my software development team, Quantaflix.com is a collaborative project that showcases our collective expertise in creating dynamic and engaging web solutions.
                   </p>
                   <div className="project-buttons">
-                     <a href="https://citylinkholidays.com/" target="_blank" class="cta"
+                     <a href="https://citylinkholidays.com/" target="_blank" className="cta"
                         aria-label="Quantaflix Live">
                         <span>Live view</span>
                         <svg viewBox="0 0 13 10" height="10px" width="15px">

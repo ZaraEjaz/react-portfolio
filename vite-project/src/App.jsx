@@ -10,26 +10,31 @@ import Footer from './Components/Footer/Footer';
 const App = () => {
   return (
     <>
-    <div class="bg"></div>
-    
-    <div className='container '>
-      <CustomNavbar/>
-    </div>
-    <div className='container'>
-      <Section1/>
-    </div>
-    <div className= 'container Introduction'>
-      <Intro/>
-    </div>
-    <div className='Skills container'>
-      <Skills/>
-    </div>
-    <div className='container'>
-      <Projects/>
-    </div>
-    <Footer/>
+      <div className="bg star-field">
+        <div className="layer"></div>
+        <div className="layer"></div>
+        <div className="layer"></div>
+      </div>
+      
+      <div className='container layer'>
+        <CustomNavbar/>
+      </div>
+      <div className='container layer'>
+        <Section1/>
+      </div>
+      <div className='container Introduction layer'>
+        <Intro/>
+      </div>
+      <div className='Skills container layer'>
+        <Skills/>
+      </div>
+      <div className='container'>
+        <Projects/>
+      </div>
+      <Footer/>
     </>
-  )
+  );
 }
+
 
 export default App
