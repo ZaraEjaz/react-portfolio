@@ -29,55 +29,7 @@ const Footer = () => {
                 
               </div>
               {/* Column 2: Contact Form */}
-              <div className="col-md-6 mb-6">
-                <section id="contact" className="d-flex justify-content-center">
-                  <div className="card p-4" style={{ maxWidth: '600px', width: '100%' }}>
-                    <div className="intro-text mb-4">
-                      <p className="tracking-in-expand-fwd-bottom" data-aos="fade-up">
-                        Contact me .______________________
-                      </p>
-                    </div>
-                    <form id="contact-form" onSubmit={sendEmail}>
-                      <div className="form-group mb-3">
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="name"
-                          placeholder="Name"
-                          name="name"
-                          required
-                        />
-                      </div>
-                      <div className="form-group mb-3">
-                        <input
-                          type="email"
-                          className="form-control"
-                          id="email"
-                          placeholder="Email"
-                          name="email"
-                          required
-                        />
-                      </div>
-                      <div className="form-group mb-3">
-                        <textarea
-                          className="form-control"
-                          rows="5"
-                          id="message"
-                          placeholder="Message"
-                          name="message"
-                          required
-                        ></textarea>
-                      </div>
-                      <button
-                        type="submit"
-                        className="btn btn-primary w-100"
-                      >
-                        Send
-                      </button>
-                    </form>
-                  </div>
-                </section>
-              </div>
+              
 
               {/* Column 3: Location, Email, Phone */}
               <div className="col-md-4 mb-4 ml-5">
@@ -94,10 +46,7 @@ const Footer = () => {
           </div>
         </footer>
       </div>
-              {/* Black vertical footer at the bottom */}
-              <div className="black-footer">
-          <p className="text-center text-white mb-0">Made and designed by Zara</p>
-        </div>
+              
     </>
   );
 };
