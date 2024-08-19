@@ -10,7 +10,9 @@ import Footer from './Components/Footer/Footer';
 const App = () => {
   return (
     <>
-    <div className='container'>
+    <div class="bg"></div>
+    
+    <div className='container '>
       <CustomNavbar/>
     </div>
     <div className='container'>
