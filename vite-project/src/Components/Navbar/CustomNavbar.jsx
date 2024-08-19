@@ -8,7 +8,8 @@ const CustomNavbar = () => {
  
 
   return (
-    <Navbar expand="lg" className={`custom-navbar`}>
+    <header>
+        <Navbar expand="lg" className={`custom-navbar`}>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mx-auto">
@@ -20,6 +21,8 @@ const CustomNavbar = () => {
         
       </Navbar.Collapse>
     </Navbar>
+    </header>
+    
   );
 };
 

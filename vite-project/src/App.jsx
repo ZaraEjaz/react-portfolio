@@ -19,6 +19,7 @@ const App = () => {
       <div className='container layer mb-5'>
         <CustomNavbar/>
       </div>
+      <main>
       <div className='container layer mt-5'>
         <Section1/>
       </div>
@@ -31,6 +32,8 @@ const App = () => {
       <div className='container'>
         <Projects/>
       </div>
+      </main>
+      
       <Footer/>
     </>
   );

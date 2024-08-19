@@ -29,6 +29,7 @@ const Section1 = () => {
   }, []);
 
   return (
+    
     <section id='Section1' className={`landingpage container ${isVisible ? 'visible' : ''}`} ref={sectionRef}>
       <div className="text-content">
         <p className={`tracking-in-expand-fwd-bottom ${isVisible ? 'animate' : ''}`}>Hello 👋 I'm</p>
