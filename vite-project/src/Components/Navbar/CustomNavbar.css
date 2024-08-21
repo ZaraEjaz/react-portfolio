@@ -46,21 +46,22 @@
 
 /* Navbar Styles */
 .custom-navbar {
-  background-image: linear-gradient(to bottom right,var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
-  /* border: 1px solid var(--tech-stack-box-border-color); */
-  backdrop-filter: blur(10px);
-  height: 80px;
+  border-radius: 40px;
+  margin: 2%;
+  padding: 1%;
+  z-index: 9999;
   width: 80%;
-  display: flex;
-  align-items: center;
-  padding: 0px 20px;
-  justify-content: space-between;
-  position:fixed;
-  z-index: 999;
-  border: 1px solid var(--color-navbarBorder-dark);
-  
-  border-radius: 50px;
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Position it at the top */
+  left: 10%; /* Align it horizontally */
+  background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
   overflow: hidden;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover Effects */
+.custom-navbar:hover {
+  transform: translateY(-2px) translateX(-50%); /* Maintain center alignment on hover */
 }
 header{
   width: 100%;
@@ -72,42 +73,49 @@ header{
 
 /* Hover Effects */
 .custom-navbar:hover {
-  transform: translateY(-2px) translateX(-50%); /* Maintain center alignment on hover */
+  transform: translateY(-2px); /* Maintain center alignment on hover */
 }
 
 
 /* Navbar Brand Styles */
 .navbar-brand {
-  font-family: 'Dancing Script', cursive; /* Use the Google Font */
-  font-size: 1.5rem; /* Adjust size as needed */
-  font-weight: 700; /* Make it bold if desired */
-  font-style: italic; /* Italicize the text */
-  transform: rotate(-10deg); /* Tilt the text */
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  font-size: 1rem; /* Adjust size as needed */
+  font-weight: 300; /* Make it bold if desired */
+  font-style: light; /* Ensure normal font style */
   transition: transform 0.1s ease; /* Smooth transition for tilting */
 }
 .navbar-brand:hover {
   transform: rotate(0deg); /* Optional: reset tilt on hover */
 }
 
-/* Hover Effects */
-.custom-navbar .navbar-brand,
-.custom-navbar .custom-nav-link,
-.custom-navbar .nav-icon {
-  margin: auto;
-  font-size: 1.2rem;
-  font-weight: 300;
-  animation: lights 5s 750ms linear infinite;
-  color: hsl(230, 100%, 95%); /* Light color for text */
-}
-
-/* Apply the animation to the navbar options */
+/* Navbar Link Styles */
 .custom-navbar .custom-nav-link {
-  animation: lights 5s 750ms linear infinite;
+  font-family: 'Robotolight', sans-serif; /* Use Roboto font */
+  font-size: 1rem;
+  font-weight: lighter; /* Normal weight */
+  color: hsl(230, 100%, 95%); /* Light color for text */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0s ease, border-bottom 0.3s ease; /* Smooth transition */
 }
 
-.custom-navbar .custom-nav-link:hover,
-.custom-navbar .navbar-brand:hover {
+.custom-navbar .custom-nav-link:hover {
   color: #ddd; /* Slightly darker color on hover */
+  border-bottom: 2px solid #ddd; /* Add underline on hover */
+}
+
+/* Toggle Button Styles */
+.navbar-toggler {
+  background: rgba(255, 255, 255, 0.268); /* Remove background */
+  border: none!important; /* Remove borders */
+  outline: white; /* Remove outline */
+  color: #fff; /* White color */
+  font-size: 1rem; /* Adjust size for medium screens */
+  padding: 2%; /* Add some padding for spacing */
+  transition: all 0.3s ease-in-out; /* Smooth transition for shrinking */
+}
+.navbar-toggler:active {
+  border: none!important;
 }
 
 /* Toggle Button Styles */
@@ -143,10 +151,11 @@ header{
 @media (max-width: 576px) {
   .navbar-toggler {
     font-size: 1rem; /* Further shrink size for extra small screens */
-    padding: 0.3rem; /* Adjust padding */
+    padding: 0.2rem; /* Adjust padding */
     border: none;
-    margin-left: 2%;
+    margin-left: 5%;
     border: none;
+    
   }
   .custom-nav-link:hover{
     border: none;

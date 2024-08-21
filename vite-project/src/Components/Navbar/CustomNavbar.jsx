@@ -17,7 +17,7 @@ const CustomNavbar = () => {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-    </header>
+    </div>
     
   );
 };
