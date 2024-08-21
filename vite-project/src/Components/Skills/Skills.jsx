@@ -13,8 +13,8 @@ const Skills = () => {
 
   return (
     <>
-        <div className='container' id='Skills'>
-      <br/>"  "
+      <div className='container' id='Skills'>
+      <br/>
       <br/>
       <br/>
     </div>
