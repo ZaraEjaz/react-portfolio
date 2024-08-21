@@ -13,7 +13,12 @@ const Skills = () => {
 
   return (
     <>
-      <div id='Skills' className='frontend-dev-section'>
+        <div className='container' id='Skills'>
+      <br/>"  "
+      <br/>
+      <br/>
+    </div>
+      <div  className='frontend-dev-section'>
         <div className="col-lg-7 col-md-6 col-sm-12 intro-text mt-5">
           <p className="tracking-in-expand-fwd-bottom" data-aos="fade-up">Skill Stack .______________________</p>
         </div>

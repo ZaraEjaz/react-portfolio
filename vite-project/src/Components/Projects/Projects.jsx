@@ -5,10 +5,14 @@ import 'aos/dist/aos.css';
 const Projects = () => {
 return (
 <>
+<div className='container' id="projects">
+      <br/>
+      <br/>
+</div>
 <div className="col-lg-7 col-md-6 col-sm-12 intro-text mt-5">
         <p className="tracking-in-expand-fwd-bottom" data-aos="fade-up">Projects .______________________</p>
 </div>
-<section className="projects-section-container" id="projects">
+<section className="projects-section-container" >
    <div className="projects-section-div">
       <div className="project-boxes-div">
          <div className="project-box-wrapper" data-aos="fade-up">

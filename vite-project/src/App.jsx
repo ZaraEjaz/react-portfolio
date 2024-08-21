@@ -10,6 +10,7 @@ import Footer from './Components/Footer/Footer';
 const App = () => {
   return (
     <>
+    
       <div className="bg star-field">
         <div className="layer"></div>
         <div className="layer"></div>

@@ -48,20 +48,23 @@
 .custom-navbar {
   border-radius: 40px;
   margin: 2%;
-  padding: 1.5%;
-  z-index: 999;
-  width: 100%;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  transform: translateZ(0); /* 3D look */
-  transition: all 0.3s ease-in-out; /* Smooth transition */
+  padding: 1%;
+  z-index: 9999;
+  width: 80%;
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Position it at the top */
+  left: 45%; /* Align it horizontally */
+  transform: translateX(-50%); /* Center it horizontally */
   background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
   overflow: hidden;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
 }
 
+/* Hover Effects */
 .custom-navbar:hover {
-  transform: translateY(-2px); /* Slight lift effect on hover */
+  transform: translateY(-2px) translateX(-50%); /* Maintain center alignment on hover */
 }
+
 
 /* Navbar Brand Styles */
 .navbar-brand {
@@ -97,24 +100,32 @@
   color: #ddd; /* Slightly darker color on hover */
 }
 
-
-
 /* Toggle Button Styles */
 .navbar-toggler {
-  background: rgba(255, 255, 255, 0.638); /* Remove background */
+  background: rgba(255, 255, 255, 0.268); /* Remove background */
   border: none!important; /* Remove borders */
-  outline: none; /* Remove outline */
+  outline: white; /* Remove outline */
   color: #fff; /* White color */
-  font-size: 1.5rem; /* Adjust size for medium screens */
-  padding: 0.5rem; /* Add some padding for spacing */
+  font-size: 1rem; /* Adjust size for medium screens */
+  padding: 2%; /* Add some padding for spacing */
   transition: all 0.3s ease-in-out; /* Smooth transition for shrinking */
+}
+.custom-nav-link:hover{
+  border: none;
+}
+.navbar-toggler:active{
+  border: none!important;
 }
 
 /* Adjust the size of the toggle button for smaller screens */
 @media (max-width: 768px) {
   .navbar-toggler {
-    font-size: 1.2rem; /* Shrink size for smaller screens */
+    font-size: 1rem; /* Shrink size for smaller screens */
     padding: 0.4rem; /* Adjust padding */
+    border: none;
+    margin-left: 2%;
+  }
+  .navbar-toggler:hover{
     border: none;
   }
 }
@@ -123,6 +134,11 @@
   .navbar-toggler {
     font-size: 1rem; /* Further shrink size for extra small screens */
     padding: 0.3rem; /* Adjust padding */
+    border: none;
+    margin-left: 2%;
+    border: none;
+  }
+  .custom-nav-link:hover{
     border: none;
   }
 }

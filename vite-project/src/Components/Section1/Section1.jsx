@@ -29,7 +29,14 @@ const Section1 = () => {
   }, []);
 
   return (
-    <section id='Section1' className={`landingpage container ${isVisible ? 'visible' : ''}`} ref={sectionRef}>
+    <>
+    <div className='container' id='Section1'>
+      <br/>"  "
+      <br/>
+      <br/>
+    </div>
+    
+    <section  className={`landingpage container ${isVisible ? 'visible' : ''}`} ref={sectionRef}>
       <div className="text-content">
         <p className={`tracking-in-expand-fwd-bottom ${isVisible ? 'animate' : ''}`}>Hello 👋 I'm</p>
         <h1 className={`name tracking-in-expand-fwd-bottom ${isVisible ? 'animate' : ''}`}>Zara Ejaz.</h1>
@@ -41,6 +48,7 @@ const Section1 = () => {
       </p>
       <Custombtn />
     </section>
+    </>
   );
 };
 

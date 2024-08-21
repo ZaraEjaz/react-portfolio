@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
-import { FaBell, FaUser } from 'react-icons/fa';
 import './CustomNavbar.css'; // Import the CSS file for the switch
 
 const CustomNavbar = () => {
- 
-
   return (
+    <div className='container'>
     <Navbar expand="lg" className={`custom-navbar`}>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -17,9 +15,9 @@ const CustomNavbar = () => {
           <Nav.Link href="#Skills" className="custom-nav-link mx-5">Skills</Nav.Link>
           <Nav.Link href="#projects" className="custom-nav-link mx-5">Projects</Nav.Link>
         </Nav>
-        
       </Navbar.Collapse>
     </Navbar>
+    </div>
   );
 };
 
