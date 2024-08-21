@@ -31,7 +31,7 @@ const Section1 = () => {
   return (
     <>
     <div className='container' id='Section1'>
-      <br/>"  "
+      <br/>
       <br/>
       <br/>
     </div>
