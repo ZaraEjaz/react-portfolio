@@ -46,7 +46,7 @@ return (
                      Developed in Java using Object-Oriented Programming principles, aimed at efficiently managing library resources and member activities.
                   </p>
                   <div className="project-buttons">
-                     <a href=" " target="_blank" rel="noopener noreferrer" className="github-redirect" aria-label="Visit on GitHub">
+                     <a href="https://github.com/ZaraEjaz/Library-Management-System" target="_blank" rel="noopener noreferrer" className="github-redirect" aria-label="Visit on GitHub">
                      <img src="./svg/github.svg" alt="github redirect button" />
                      </a>
                   </div>
@@ -83,13 +83,31 @@ return (
                   <article className="ProjectHeading">CPU SCHEDULING SIMULAOR</article>
                   <p className="ProjectDescription">Web app using JavaScript, HTML, and CSS to simulate CPU scheduling and page replacement algorithms, providing visualization and performance metrics.</p>
                   <div className="project-buttons">
-                     <a href=" " target="_blank" rel="noopener noreferrer" className="github-redirect" aria-label="Visit on GitHub">
+                     <a href="https://github.com/ZaraEjaz/CPU-SCHEDULAR" target="_blank" rel="noopener noreferrer" className="github-redirect" aria-label="Visit on GitHub">
                      <img src="./svg/github.svg" alt="github redirect button" />
                      </a>
                   </div>
                </div>
                <div className="image-div">
                   <img src="./Images/CPUS.jpg" alt="CPUS" />
+               </div>
+            </div>
+         </div>
+         {/* Add other project-boxes here */}
+         <div className="project-box-wrapper" data-aos="fade-up">
+            <div className="project-box project-box5" id="project-box5">
+               <div className="info-div">
+                  <article className="ProjectHeading">Algorithm Visualizer</article>
+                  <p className="ProjectDescription">
+                  This project demonstrates CPU scheduling and page replacement algorithms to enhance understanding of process management and memory usage in operating systems. By simulating these algorithms, it highlights their impact on system performance and efficiency.</p>
+                  <div className="project-buttons">
+                     <a href="https://github.com/ZaraEjaz/Algorithm-Visualizer" target="_blank" rel="noopener noreferrer" className="github-redirect" aria-label="Visit on GitHub">
+                     <img src="./svg/github.svg" alt="github redirect button" />
+                     </a>
+                  </div>
+               </div>
+               <div className="image-div">
+                  <img src="./Images/AlgorithmVisualizer.png" alt="CPUS" />
                </div>
             </div>
          </div>
