@@ -9,8 +9,9 @@ const Intro = () => {
           <p className="tracking-in-expand-fwd-bottom mb-5">About me .____________________</p>
           <h1 className="tracking-in-expand-fwd-bottom mb-5">Zara Ejaz</h1>
           <p className="intro-paragraph tracking-in-expand-fwd-bottom">
-          As a web developer with expertise in frontend web design, I have a passion for creating engaging web interfaces, collaborating with others, and developing innovative products. <br /><br />
-          I prioritize a straightforward content structure, elegant design patterns, and meaningful interactions.</p>
+          Hello, I'm Zara Ejaz — a passionate software engineering student with a flair for web design and development. My journey in the tech world is fueled by a curiosity to explore the endless possibilities of code and a drive to create seamless, user-friendly digital experiences. 
+<br /><br />
+Welcome to my portfolio, where you can discover the projects that reflect my growth, skills, and commitment to innovation. Let’s build something amazing together!.</p>
           
         </div>
 

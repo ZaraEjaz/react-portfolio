@@ -10,7 +10,7 @@ p {
   transform: translateX(-100px);
   animation: fadeInFromLeft 1s forwards;
   font-weight: lighter;
-  word-spacing: 5px;
+  word-spacing: 3px;
 }
 
 h1 {
@@ -26,6 +26,7 @@ h1 {
   opacity: 0;
   transform: translateX(-100px);
   animation: fadeInFromLeft 1s 0.4s forwards;
+  text-transform: initial;
 }
 
 .Introcontainer {
@@ -59,6 +60,7 @@ h1 {
     font-size: 2rem;
   }
   .intro-img {
+    word-spacing: 1px;
     max-width: 250px; /* Adjusted for smaller screens */
   }
 }
@@ -71,6 +73,7 @@ h1 {
     font-size: 1.75rem;
   }
   .intro-img {
+    word-spacing: 1px;
     max-width: 200px; /* Adjusted for even smaller screens */
   }
 }
@@ -83,11 +86,13 @@ h1 {
     font-size: 1.5rem;
   }
   .intro-img {
+    margin-top: 5%;
     max-width: 180px; /* Adjusted for small screens */
   }
 
   .intro-text, .intro-image {
-    text-align: center; /* Center align text on smaller screens */
+    word-spacing: 1px;
+    text-align: left; /* Center align text on smaller screens */
   }
 
   .Introcontainer {

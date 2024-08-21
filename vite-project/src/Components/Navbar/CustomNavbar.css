@@ -56,13 +56,11 @@
   transform: translateZ(0); /* 3D look */
   transition: all 0.3s ease-in-out; /* Smooth transition */
   background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
-  border: 1px solid var(--tech-stack-box-border-color);
   overflow: hidden;
 }
 
 .custom-navbar:hover {
   transform: translateY(-2px); /* Slight lift effect on hover */
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.9); /* Enhanced glowing effect on hover */
 }
 
 /* Navbar Brand Styles */
@@ -72,7 +70,7 @@
   font-weight: 700; /* Make it bold if desired */
   font-style: italic; /* Italicize the text */
   transform: rotate(-10deg); /* Tilt the text */
-  transition: transform 0.3s ease; /* Smooth transition for tilting */
+  transition: transform 0.1s ease; /* Smooth transition for tilting */
 }
 .navbar-brand:hover {
   transform: rotate(0deg); /* Optional: reset tilt on hover */
@@ -99,31 +97,32 @@
   color: #ddd; /* Slightly darker color on hover */
 }
 
-/* Light and Dark Mode Styles */
-body.light-mode .custom-navbar .custom-nav-link,
-body.light-mode .custom-navbar .navbar-brand {
-  color: #f4f4f5; /* Light text color in light mode */
+
+
+/* Toggle Button Styles */
+.navbar-toggler {
+  background: rgba(255, 255, 255, 0.638); /* Remove background */
+  border: none!important; /* Remove borders */
+  outline: none; /* Remove outline */
+  color: #fff; /* White color */
+  font-size: 1.5rem; /* Adjust size for medium screens */
+  padding: 0.5rem; /* Add some padding for spacing */
+  transition: all 0.3s ease-in-out; /* Smooth transition for shrinking */
 }
 
-body.dark-mode .custom-navbar .custom-nav-link,
-body.dark-mode .custom-navbar .navbar-brand {
-  color: #f4f4f5; /* Light text color in dark mode */
-}
-
-
-
-
-/* Toggle Button Styles for Smaller Screens */
+/* Adjust the size of the toggle button for smaller screens */
 @media (max-width: 768px) {
   .navbar-toggler {
-    border:none;
-    border-radius: 15px;
-    background-color: #ffffff1b; /* White background */
-    color: black; /* Black icon color */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
+    font-size: 1.2rem; /* Shrink size for smaller screens */
+    padding: 0.4rem; /* Adjust padding */
+    border: none;
   }
+}
 
-  .navbar-toggler:hover {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Enhanced glowing effect on hover */
+@media (max-width: 576px) {
+  .navbar-toggler {
+    font-size: 1rem; /* Further shrink size for extra small screens */
+    padding: 0.3rem; /* Adjust padding */
+    border: none;
   }
 }
