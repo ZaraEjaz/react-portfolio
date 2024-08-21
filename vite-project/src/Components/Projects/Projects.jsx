@@ -99,7 +99,7 @@ return (
                <div className="info-div">
                   <article className="ProjectHeading">Algorithm Visualizer</article>
                   <p className="ProjectDescription">
-                  This project demonstrates CPU scheduling and page replacement algorithms to enhance understanding of process management and memory usage in operating systems. By simulating these algorithms, it highlights their impact on system performance and efficiency.</p>
+                  Project demonstrates CPU scheduling and page replacement algorithms to enhance understanding of process management and memory usage in operating systems. </p>
                   <div className="project-buttons">
                      <a href="https://github.com/ZaraEjaz/Algorithm-Visualizer" target="_blank" rel="noopener noreferrer" className="github-redirect" aria-label="Visit on GitHub">
                      <img src="./svg/github.svg" alt="github redirect button" />
