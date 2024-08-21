@@ -41,7 +41,6 @@ const Footer = () => {
     <div className="footer-bottom">
           <article>
             Design & Built by Zara Ejaz
-            &#169; twentytwentythree
           </article>
     </div>
 </>
