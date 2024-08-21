@@ -1,3 +1,4 @@
+/* Root Variables */
 :root {
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     cursor: default;
@@ -18,14 +19,17 @@
     --tech-stack-box-second-color: rgba(27, 27, 40, 0);
     --tech-stack-box-border-color: #292929;
 }
+
+/* Projects Section Container */
 .projects-section-container {
-    padding: 10px ;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
 
+/* Projects Section Div */
 .projects-section-div {
     width: 80%;
     max-width: 1200px;
@@ -35,6 +39,7 @@
     justify-content: center;
 }
 
+/* Projects Heading */
 .projects-heading {
     width: 100%;
     display: flex;
@@ -42,6 +47,7 @@
     gap: 10px;
 }
 
+/* Project Boxes Div */
 .project-boxes-div {
     width: 100%;
     display: flex;
@@ -51,12 +57,14 @@
     padding: 50px 0;
 }
 
+/* Project Box Wrapper */
 .project-box-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
+/* Project Box */
 .project-box {
     background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
     width: 100%;
@@ -73,6 +81,7 @@
     flex-wrap: wrap; /* Added to handle wrapping on smaller screens */
 }
 
+/* Info Div */
 .info-div {
     width: 50%;
     height: auto;
@@ -85,11 +94,13 @@
     padding: 0 40px;
 }
 
+/* Favicon for Project */
 .faviconforProject {
     width: 30px;
     border-radius: 50%;
 }
 
+/* Image Div */
 .image-div {
     width: 50%;
     height: 100%;
@@ -103,18 +114,21 @@
     border-top-left-radius: 40px;
 }
 
+/* Project Heading */
 .ProjectHeading {
     color: var(--color-white);
     font-size: 2rem;
     font-weight: 700;
 }
 
+/* Project Description */
 .ProjectDescription {
     color: var(--color-gray);
     font-size: 0.8rem;
     font-weight: 300;
 }
 
+/* Project Buttons */
 .project-buttons {
     width: 100%;
     display: flex;
@@ -123,6 +137,7 @@
     gap: 20px;
 }
 
+/* GitHub Redirect */
 .github-redirect {
     text-decoration: none;
     width: 50px;
@@ -139,6 +154,7 @@
     filter: brightness(4);
 }
 
+/* Call to Action Button */
 .cta {
     position: relative;
     padding: 12px 18px;
@@ -198,21 +214,27 @@
     transform: scale(0.95);
 }
 
+/* Projects Heading Article */
 .projects-heading-article {
     font-size: 3rem;
     font-weight: 700;
     color: var(--color-white);
 }
 
+/* Projects Heading Paragraph */
 .projectsHeadingP {
     margin-top: 20px;
     color: var(--color-gray);
     font-size: 1rem;
 }
+
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
     .project-box {
         flex-direction: column; /* Stack items vertically on smaller screens */
         align-items: center;
+        height: 300px; /* Allow the height to adjust automatically */
+
     }
 
     .info-div, .image-div {
@@ -224,5 +246,24 @@
     .image-div img {
         margin-top: 0; /* Remove margin for a more centered image */
         border-radius: 0; /* Adjust border radius */
+    }
+
+    .ProjectHeading {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .ProjectDescription {
+        font-size: 0.7rem; /* Adjust description size */
+    }
+
+    .cta span {
+        font-size: 1rem; /* Adjust CTA text size */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .project-box {
+        height: 350px; /* Allow the height to adjust automatically */
+        max-width: 100%; /* Ensure the box takes full width */
     }
 }
