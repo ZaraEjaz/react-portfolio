@@ -11,7 +11,9 @@
   align-items: flex-start; /* Align content to the left for normal screens */
   justify-content: center;
   text-align: left;
-  line-height: 1;
+  line-height: normal;
+  word-spacing: normal;
+  
 }
 
 /* Visible state when element is in view */
@@ -41,6 +43,8 @@
 .info-para {
   transform: translateX(100px); /* Slide in from the right */
   animation: fadeInFromRight 1s 0.6s forwards;
+  word-spacing: 3px;
+  line-height: normal;
 }
 
 /* Styles for specific text elements */

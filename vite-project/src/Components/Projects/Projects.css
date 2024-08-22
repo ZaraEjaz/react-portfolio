@@ -233,7 +233,7 @@
     .project-box {
         flex-direction: column; /* Stack items vertically on smaller screens */
         align-items: center;
-        height: 300px; /* Allow the height to adjust automatically */
+        height: 250px; /* Allow the height to adjust automatically */
 
     }
 
@@ -263,7 +263,7 @@
 
 @media screen and (max-width: 576px) {
     .project-box {
-        height: 350px; /* Allow the height to adjust automatically */
+        height: 300px; /* Allow the height to adjust automatically */
         max-width: 100%; /* Ensure the box takes full width */
     }
 }

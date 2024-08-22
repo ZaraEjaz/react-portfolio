@@ -21,7 +21,7 @@ const App = () => {
         <CustomNavbar/>
       </div>
       <main>
-      <div className='container layer mt-5'>
+      <div className='container layer'>
         <Section1/>
       </div>
       <div className='container Introduction layer'>
