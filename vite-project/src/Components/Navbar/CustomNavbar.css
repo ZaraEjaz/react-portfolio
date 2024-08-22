@@ -140,7 +140,7 @@ header{
     font-size: 1rem; /* Shrink size for smaller screens */
     padding: 0.4rem; /* Adjust padding */
     border: none;
-    margin-left: 2%;
+    margin-left: 50%;
   }
   .navbar-toggler:hover{
     border: none;
@@ -154,7 +154,7 @@ header{
     border: none;
     margin-left: 5%;
     border: none;
-    
+    margin-left: 50%;
   }
   header{
     width: 50%;
