@@ -64,6 +64,11 @@ const Skills = () => {
                 <img src="./Images/wordpresslogo.png" alt="wordpress skill" className="tech-stack-logo" />
                 <span className="tooltip">WORDPRESS</span>
               </li>
+              <li className="tech-stack-box" data-aos="fade-left" data-aos-delay="900">
+                <img src="./Images/python.png" alt="python skill" className="tech-stack-logo" />
+                <span className="tooltip">PYTHON</span>
+              </li>
+
             </ul>
           </div>
         </div>
