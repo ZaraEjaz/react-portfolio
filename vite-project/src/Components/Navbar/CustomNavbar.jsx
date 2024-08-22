@@ -5,7 +5,7 @@ import './CustomNavbar.css'; // Import the CSS file for the switch
 
 const CustomNavbar = () => {
   return (
-    <div className='container'>
+
     <Navbar expand="lg" className={`custom-navbar`}>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -17,7 +17,7 @@ const CustomNavbar = () => {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-    </div>
+
     
   );
 };

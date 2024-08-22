@@ -6,6 +6,11 @@
   background-color: #19092d;
   
 }
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .bg {
   background: url(https://i.ibb.co/87GbbFP/2799006.jpg) no-repeat;
   background-size: cover;
