@@ -2,8 +2,7 @@
 
 /* Hello Intro */
 p {
-  text-shadow: 0 0 7px rgba(255, 255, 255, 0.7), 0 0 3px rgba(255, 255, 255, 0.3);
-  font-size: 1.26rem;
+  font-size: 1.28rem;
   text-transform: uppercase;
   color: #e5e5e5;
   opacity: 0;
@@ -54,10 +53,10 @@ h1 {
 
 @media (max-width: 992px) {
   p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .intro-img {
     word-spacing: 1px;
@@ -67,10 +66,10 @@ h1 {
 
 @media (max-width: 768px) {
   p {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
   h1 {
-    font-size: 1.75rem;
+    font-size: 1.76rem;
   }
   .intro-img {
     word-spacing: 1px;
@@ -80,10 +79,10 @@ h1 {
 
 @media (max-width: 576px) {
   p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .intro-img {
     margin-top: 5%;

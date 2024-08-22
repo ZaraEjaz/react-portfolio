@@ -66,7 +66,6 @@
 }
 
 .info-para {
-    text-shadow: 0 0 7px rgba(255, 255, 255, 0.7), 0 0 3px rgba(255, 255, 255, 0.3);
     font-size:1.5rem;
     font-weight: lighter;
     text-transform: initial;
@@ -130,7 +129,7 @@
   }
 
   .info-para {
-    font-size: 0.88rem; /* Smaller paragraph size */
+    font-size: 1rem; /* Smaller paragraph size */
     word-spacing: 1px; /* Reduce word spacing */
     max-width: 100%; /* Full width on small screens */
   }
