@@ -26,6 +26,7 @@ h1 {
   transform: translateX(-100px);
   animation: fadeInFromLeft 1s 0.4s forwards;
   text-transform: initial;
+  word-spacing: normal;
 }
 
 .Introcontainer {
