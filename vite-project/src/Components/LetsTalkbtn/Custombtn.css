@@ -52,7 +52,7 @@ button {
   
   @media (max-width: 400px) {
     button {
-      font-size: 11px; /* Smallest font size */
+      font-size: 15px; /* Smallest font size */
       padding: 0.4em 1.5em; /* Smallest padding */
     }
   }
