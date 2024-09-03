@@ -40,7 +40,7 @@ const Footer = () => {
     </div>
     <div className="footer-bottom">
           <article>
-            Design & Built by Zara Ejaz
+            Design & Developed by Zara Ejaz
           </article>
     </div>
 </>
