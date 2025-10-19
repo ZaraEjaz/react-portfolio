@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* Keyframes for Lights Animation */
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+}
+
+/* Navbar Styles */
+.custom-navbar {
+  border-radius: 40px;
+  margin: 2%;
+  padding: 1%;
+  z-index: 9999;
+  width: 80%;
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Position it at the top */
+  background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
+  overflow: hidden;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover Effects */
+.custom-navbar:hover {
+  transform: translateY(-2px); /* Maintain center alignment on hover */
+}
+header{
+  width: 70%;
+  height: 115px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* Hover Effects */
+.custom-navbar:hover {
+  transform: translateY(-2px); /* Maintain center alignment on hover */
+}
+
+
+/* Navbar Brand Styles */
+.navbar-brand {
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  font-size: 1rem; /* Adjust size as needed */
+  font-weight: 300; /* Make it bold if desired */
+  font-style: light; /* Ensure normal font style */
+  transition: transform 0.1s ease; /* Smooth transition for tilting */
+}
+.navbar-brand:hover {
+  transform: rotate(0deg); /* Optional: reset tilt on hover */
+}
+
+/* Navbar Link Styles */
+.custom-navbar .custom-nav-link {
+  font-family: 'Robotolight', sans-serif; /* Use Roboto font */
+  font-size: 1rem;
+  font-weight: lighter; /* Normal weight */
+  color: hsl(230, 100%, 95%); /* Light color for text */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0s ease, border-bottom 0.3s ease; /* Smooth transition */
+}
+
+.custom-navbar .custom-nav-link:hover {
+  color: #ddd; /* Slightly darker color on hover */
+  border-bottom: 2px solid #ddd; /* Add underline on hover */
+}
+
+/* Toggle Button Styles */
+.navbar-toggler {
+  background: rgba(255, 255, 255, 0.268); /* Remove background */
+  border: none!important; /* Remove borders */
+  outline: white; /* Remove outline */
+  color: #fff; /* White color */
+  font-size: 1rem; /* Adjust size for medium screens */
+  padding: 2%; /* Add some padding for spacing */
+  transition: all 0.3s ease-in-out; /* Smooth transition for shrinking */
+}
+.navbar-toggler:active {
+  border: none!important;
+}
+
+/* Toggle Button Styles */
+.navbar-toggler {
+  background: rgba(255, 255, 255, 0.268); /* Remove background */
+  border: none!important; /* Remove borders */
+  outline: white; /* Remove outline */
+  color: #fff; /* White color */
+  font-size: 1rem; /* Adjust size for medium screens */
+  padding: 2%; /* Add some padding for spacing */
+  transition: all 0.3s ease-in-out; /* Smooth transition for shrinking */
+}
+.custom-nav-link:hover{
+  border: none;
+}
+.navbar-toggler:active{
+  border: none!important;
+}
+
+/* Adjust the size of the toggle button for smaller screens */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    font-size: 1rem; /* Shrink size for smaller screens */
+    padding: 0.4rem; /* Adjust padding */
+    border: none;
+    margin-left: 50%;
+  }
+  .navbar-toggler:hover{
+    border: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-toggler {
+    font-size: 1rem; /* Further shrink size for extra small screens */
+    padding: 0.2rem; /* Adjust padding */
+    border: none;
+    margin-left: 5%;
+    border: none;
+    margin-left: 50%;
+  }
+  header{
+    width: 50%;
+  }
+  .custom-nav-link:hover{
+    border: none;
+  }
+}

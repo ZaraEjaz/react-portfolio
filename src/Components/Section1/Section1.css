@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Container for the section */
+.landingpage {
+  margin-top: 5%;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-out;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left for normal screens */
+  justify-content: center;
+  text-align: left;
+  line-height: normal;
+  word-spacing: normal;
+  
+}
+
+/* Visible state when element is in view */
+.landingpage.visible {
+  opacity: 1; /* Visible when in view */
+}
+
+/* Text and heading animations */
+.text-content p,
+.text-content h1,
+.work,
+.info-para {
+  opacity: 0;
+  transform: translateX(-100px); /* Default to left slide-in */
+  animation: fadeInFromLeft 1s forwards;
+}
+
+.text-content h1 {
+  animation-delay: 0.2s;
+}
+
+.work {
+  animation-delay: 0.4s;
+}
+
+/* Info paragraph specific animation */
+.info-para {
+  transform: translateX(100px); /* Slide in from the right */
+  animation: fadeInFromRight 1s 0.6s forwards;
+  word-spacing: 3px;
+  line-height: normal;
+}
+
+/* Styles for specific text elements */
+.name {
+  font-size: 5rem;
+  font-weight: 700;
+  width: fit-content;
+  display: flex;
+  align-items: flex-start;
+  color: rgb(179, 147, 217);
+  flex-wrap: wrap;
+}
+
+.work {
+  font-size: 4rem;
+  font-weight: 700;
+  width: fit-content;
+  display: flex;
+  text-transform: initial;
+  align-items: flex-start;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.info-para {
+    font-size:1.5rem;
+    font-weight: lighter;
+    text-transform: initial;
+    color: #e5e5e5;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: fadeInFromLeft 1s forwards;
+}
+
+/* Keyframes for animations */
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Gradient animation for .p class */
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .landingpage {
+    align-items: left; /* Center-align content on smaller screens */
+    text-align: left; /* Center-align text on smaller screens */
+    line-height: 1;
+  }
+
+  .text-content h1 {
+    font-size: 3rem; /* Smaller heading size */
+  }
+
+  .work {
+    font-size: 2.5rem; /* Smaller subheading size */
+  }
+
+  .info-para {
+    font-size: 0.88rem; /* Smaller paragraph size */
+    word-spacing: 1px; /* Reduce word spacing */
+    max-width: 100%; /* Full width on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-content h1 {
+    font-size: 2.3rem; /* Slightly larger heading size */
+  }
+
+  .work {
+    font-size: 2.0rem; /* Slightly larger subheading size */
+  }
+
+  .info-para {
+    font-size: 1rem; /* Slightly larger paragraph size */
+    word-spacing: 1px;
+  }
+}

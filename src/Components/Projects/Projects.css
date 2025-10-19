@@ -1,0 +1,269 @@
+/* Root Variables */
+:root {
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    cursor: default;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-dark-mode: #11111b;
+    --color-light-mode: #ece7e1;
+    --color-ddd-color: #ddd;
+    --color-gray: #c4c4c4;
+    --color-purple: #8000ff;
+    --color-light-purple: #cf59e6;
+    --color-light-blue: #6bc5f8;
+    --color-navbarBorder-dark: #e2e2e207;
+    --color-shadowDark: rgba(0, 0, 0, 0.137);
+    --static-heading-gradient-blue: #b0f3f1;
+    --static-heading-gradient-pink: #ffcfdf;
+    --tech-stack-box-first-color: #1a1a29;
+    --tech-stack-box-second-color: rgba(27, 27, 40, 0);
+    --tech-stack-box-border-color: #292929;
+}
+
+/* Projects Section Container */
+.projects-section-container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Projects Section Div */
+.projects-section-div {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Projects Heading */
+.projects-heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Project Boxes Div */
+.project-boxes-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+/* Project Box Wrapper */
+.project-box-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Project Box */
+.project-box {
+    background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: 0.3s;
+    position: relative;
+    border-radius: 30px;
+    border: 1px solid var(--tech-stack-box-border-color);
+    overflow: hidden;
+    flex-wrap: wrap; /* Added to handle wrapping on smaller screens */
+}
+
+/* Info Div */
+.info-div {
+    width: 50%;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+/* Favicon for Project */
+.faviconforProject {
+    width: 30px;
+    border-radius: 50%;
+}
+
+/* Image Div */
+.image-div {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-div img {
+    height: 100%;
+    object-fit: cover;
+    margin-top: 30px;
+    border-top-left-radius: 40px;
+}
+
+/* Project Heading */
+.ProjectHeading {
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Project Description */
+.ProjectDescription {
+    color: var(--color-gray);
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+/* Project Buttons */
+.project-buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+/* GitHub Redirect */
+.github-redirect {
+    text-decoration: none;
+    width: 50px;
+}
+
+.github-redirect img {
+    width: 45px;
+    height: auto;
+    transition: all 0.3s;
+    filter: brightness(2);
+}
+
+.github-redirect:hover img {
+    filter: brightness(4);
+}
+
+/* Call to Action Button */
+.cta {
+    position: relative;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cta::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #2b2f4e;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-light-blue);
+}
+
+.cta svg {
+    position: relative;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--color-light-blue);
+    stroke-width: 2;
+    transition: all 0.3s ease;
+}
+
+.cta:hover::before {
+    width: 100%;
+}
+
+.cta:hover span {
+    color: white;
+}
+
+.cta:hover svg {
+    stroke: white;
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+/* Projects Heading Article */
+.projects-heading-article {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+/* Projects Heading Paragraph */
+.projectsHeadingP {
+    margin-top: 20px;
+    color: var(--color-gray);
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .project-box {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+        height: 250px; /* Allow the height to adjust automatically */
+
+    }
+
+    .info-div, .image-div {
+        width: 100%; /* Make both divs take full width */
+        padding: 20px;
+        text-align: center; /* Center align text */
+    }
+
+    .image-div img {
+        margin-top: 0; /* Remove margin for a more centered image */
+        border-radius: 0; /* Adjust border radius */
+    }
+
+    .ProjectHeading {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .ProjectDescription {
+        font-size: 0.7rem; /* Adjust description size */
+    }
+
+    .cta span {
+        font-size: 1rem; /* Adjust CTA text size */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .project-box {
+        height: 300px; /* Allow the height to adjust automatically */
+        max-width: 100%; /* Ensure the box takes full width */
+    }
+}

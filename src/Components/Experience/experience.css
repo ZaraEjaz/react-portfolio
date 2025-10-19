@@ -1,0 +1,130 @@
+.experience-section {
+    padding: 80px 20px;
+    color: #f1f1f1; /* Light text */
+  }
+  
+  .experience-title {
+    font-size: 1.28rem;
+  text-transform: uppercase;
+  color: #e5e5e5;
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: fadeInFromLeft 1s forwards;
+  font-weight: lighter;
+  word-spacing: 3px;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background: linear-gradient(#ded6ec, #220f61, transparent);
+    box-shadow: 0 0 15px #301fae, 0 0 30px #3c1072;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5px;
+    z-index: 1;
+  }
+  
+  .timeline-item {
+    padding: 25px 40px;
+    position: relative;
+    width: 50%;
+  }
+  
+  .timeline-item.left {
+    left: 0;
+  }
+  
+  .timeline-item.right {
+    left: 50%;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    top: 30px;
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(180deg, #9c90ec, transparent);
+    box-shadow: 0 0 15px #00f0ff, 0 0 30px #2b00ff;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(13, 110, 253, 0.8);
+  }
+  
+  .timeline-item.left .timeline-dot {
+    right: -9px;
+  }
+  
+  .timeline-item.right .timeline-dot {
+    left: -9px;
+  }
+  
+  .timeline-content {
+    background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
+    border: 1px solid var(--tech-stack-box-border-color);
+    border-radius: 15px;
+    padding: 20px 25px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .timeline-content:hover {
+    transform: translateY(-5px);
+  }
+  
+  .timeline-content h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+  
+  .timeline-content h3 span {
+    color: #14822e; /* Highlight company */
+  }
+  
+  .timeline-content .duration {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    margin-bottom: 12px;
+  }
+  
+  .timeline-content p {
+    font-size: 1rem;
+  color: #e5e5e5;
+  text-transform: capitalize;
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: fadeInFromLeft 1s forwards;
+  font-weight: lighter;
+  word-spacing: 3px;
+  }
+  
+  /* 📱 Mobile responsive */
+  @media screen and (max-width: 768px) {
+    .timeline::after {
+      left: 20px;
+    }
+  
+    .timeline-item {
+      width: 100%;
+      padding-left: 50px;
+      padding-right: 20px;
+    }
+  
+    .timeline-item.right {
+      left: 0;
+    }
+  
+    .timeline-dot {
+      left: 10px !important;
+    }
+  }
+  
