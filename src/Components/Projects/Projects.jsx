@@ -60,7 +60,7 @@ return (
                     Designed & Developed the official TriTechTitan website. The project was built using React (Vite) and Typescript for fast performance and a modern development workflow, along with Tailwind CSS for styling and responsiveness.
                   </p>
                   <div className="project-buttons">
-                     <a href="https://tritechtitan.info/" target="_blank" className="cta"
+                     <a href="https://tritechtitan.com/" target="_blank" className="cta"
                         aria-label="TriTechTitan Live">
                         <span>Live view</span>
                         <svg viewBox="0 0 13 10" height="10px" width="15px">
